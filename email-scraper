@@ -10,7 +10,8 @@ const TIMEOUT = 15000; // Timeout for each request, in milliseconds
 const requestQueue = new Set();
 
 // Scrape the email address from the given URL
-function getEmail(url) {
+function getEmail() {
+var url = "https://learn.coachmariawendt.com/24-for-24/"
   // Check if the URL is valid
   if (!url || !url.startsWith('http')) {
     return null;
